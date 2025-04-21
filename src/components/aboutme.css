@@ -1,0 +1,110 @@
+/* About Section Styles */
+.about-section {
+  padding: 100px 20px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  flex: 2;
+  text-align: left;
+  overflow: visible;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initial hidden state */
+.about-content h2,
+.about-content p {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Apply animation when .animate class is present */
+.about-content.animate h2,
+.about-content.animate p {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.about-content.animate h2 {
+  animation-delay: 0.2s;
+}
+
+.about-content.animate p {
+  animation-delay: 0.4s;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: #50586C;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* Hide the photo on mobile view */
+  .about-photo {
+    display: none;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}

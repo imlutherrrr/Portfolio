@@ -1,0 +1,41 @@
+.contact-section {
+    padding: 4rem 2rem;
+    background-color: #50586C;
+    text-align: center;
+  }
+  
+  .contact-title {
+    color: white;
+    font-size: 2.3rem;
+  }
+  .contact-intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  .contact-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-links a:hover {
+    color: white;
+  }
+  
+  .icon {
+    font-size: 1.4rem;
+  }
+  

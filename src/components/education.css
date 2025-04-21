@@ -1,0 +1,101 @@
+.education-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #50586C;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.edu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.edu-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.edu-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.edu-card h3 {
+  color: #50586C;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.edu-place,
+.edu-year,
+.edu-grade {
+  color: #333;
+  margin: 0.2rem 0;
+  font-weight: 500;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .edu-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .edu-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .edu-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .edu-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .edu-place,
+  .edu-year,
+  .edu-grade {
+    font-size: 0.9rem;
+  }
+}

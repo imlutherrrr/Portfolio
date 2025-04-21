@@ -1,0 +1,137 @@
+/* Home Section Styles */
+.home-section {
+  padding-top: 100px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1 1 400px;
+  padding: 1rem;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  color: #080808;
+  margin-bottom: 0.5rem;
+}
+
+.typing-container {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #111;
+  animation: blink-caret 0.5s step-end infinite;
+}
+
+.typing {
+  font-size: 1.8rem;
+  color: #111;
+  display: inline-block;
+  animation: typing 1.5s steps(22, end) forwards;
+  transition: all 0.3s ease-in-out;
+}
+
+.typing-container.done {
+  animation: none;
+  border-right: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  0%, 100% {
+    border-color: #111;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #0a0a0a;
+}
+
+.highlight {
+  color: #50586C;
+}
+
+.photo-content {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 768px) {
+  .home-section {
+    padding-top: 80px; /* Reduced gap between navbar and photo */
+  }
+
+  .home-content {
+    flex-direction: column-reverse; /* Image first on mobile view */
+    text-align: center;
+    gap: 0.5rem; /* Reduced gap between image and text */
+  }
+
+  .text-content, .photo-content {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .typing {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-section {
+    padding-top: 100px; /* Further adjusted padding for smaller screens */
+  }
+}
