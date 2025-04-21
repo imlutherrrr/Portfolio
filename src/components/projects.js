@@ -31,7 +31,7 @@ It includes sections like About, Projects, and Contact, with clickable links to 
             <p><strong>Tech Stack:</strong> React.js, CSS, JSX</p>
             <div className="project-links">
               <a href="https://imlutherrrr.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
-              <a href="https://github.com/your-github/portfolio" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://github.com/imlutherrrr/Portfolio" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
         </div>
