@@ -30,7 +30,7 @@ const Projects = () => {
 It includes sections like About, Projects, and Contact, with clickable links to GitHub, LinkedIn, and live project demos. Built with a mobile-first approach using custom CSS and media queries for device adaptability.</p>
             <p><strong>Tech Stack:</strong> React.js, CSS, JSX</p>
             <div className="project-links">
-              <a href="https://your-live-site.com" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="https://imlutherrrr.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
               <a href="https://github.com/your-github/portfolio" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
