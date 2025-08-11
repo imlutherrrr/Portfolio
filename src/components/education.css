@@ -1,101 +1,89 @@
 .education-section {
-  padding: 4rem 2rem;
-  background-color: #f8f9fa;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  color: #50586C;
+  font-size: 2rem;
+  color: white;
   margin-bottom: 2rem;
-  text-shadow: 1px 1px 2px #ccc;
 }
 
-.edu-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.edu-card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.edu-horizontal {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 0.5rem;
+  scroll-snap-type: x mandatory;
+  justify-content: center;
 }
 
-.edu-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+.edu-box {
+  flex: 0 0 220px;
+  background: #24282d; /* Updated to light grey */
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
 }
 
-.edu-logo {
-  width: 80px;
-  height: 80px;
+.edu-box:hover {
+  transform: translateY(-5px);
+}
+
+.edu-box img {
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-}
-
-.edu-card h3 {
-  color: #50586C;
   margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+  border-radius: 6px;
 }
 
-.edu-place,
-.edu-year,
-.edu-grade {
-  color: #333;
+.edu-box h4 {
+  font-size: 1rem;
+  color: white;
+  margin: 0.3rem 0;
+}
+
+.edu-box p {
+  font-size: 0.85rem;
   margin: 0.2rem 0;
+  color: white;
+}
+
+.edu-box span {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.grade {
+  color: #3b82f6;
   font-weight: 500;
 }
 
-/* ✅ Responsive Styles */
-@media (max-width: 1024px) {
-  .section-title {
-    font-size: 2.2rem;
-  }
-
-  .edu-logo {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .edu-logo {
-    width: 60px;
-    height: 60px;
-  }
-}
-
+/* Small Devices */
 @media (max-width: 480px) {
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
-  .edu-logo {
-    width: 50px;
-    height: 50px;
+  .edu-box {
+    flex: 0 0 180px;
+    padding: 0.8rem;
   }
 
-  .edu-card h3 {
-    font-size: 1.1rem;
+  .edu-box h4 {
+    font-size: 0.95rem;
   }
 
-  .edu-place,
-  .edu-year,
-  .edu-grade {
-    font-size: 0.9rem;
+  .edu-box p, .edu-box span {
+    font-size: 0.75rem;
+  }
+
+  .edu-box img {
+    width: 40px;
+    height: 40px;
   }
 }

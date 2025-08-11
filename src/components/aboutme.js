@@ -1,5 +1,3 @@
-// src/components/About.js
-
 import React, { useEffect, useRef } from 'react';
 import './aboutme.css';
 
@@ -12,7 +10,7 @@ const About = () => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate');
         } else {
-          entry.target.classList.remove('animate'); // Remove to allow re-animating
+          entry.target.classList.remove('animate');
         }
       },
       { threshold: 0.2 }
@@ -32,21 +30,10 @@ const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-container">
-        <div className="about-photo">
-          <img
-            src={require('../images/IMG20250203202144.jpg')}
-            alt="Luther Karuparthi"
-            className="about-image"
-          />
-        </div>
         <div className="about-content" ref={aboutRef}>
           <h2>About Me</h2>
           <p>
-            Hi, I'm Luther Karuparthi, a passionate web developer who loves turning ideas into interactive and functional web experiences. I enjoy working on both the frontend and backend, building applications that are not only visually appealing but also optimized and scalable.
-
-            I'm constantly exploring new technologies, improving my skills, and building projects that help me grow as a developer. I believe in clean code, creative problem-solving, and learning by doing.
-
-            Currently, I’m looking for an opportunity to join a dynamic team where I can contribute, learn, and take on real-world challenges.          
+            Hi, I'm Luther Karuparthi, an aspiring Backend Developer with a strong interest in building clean, scalable, and efficient web applications. I specialize in Python, Flask, and MySQL, and I enjoy working behind the scenes to create smooth and responsive user experiences. I recently completed my B.Tech and have been actively building personal projects to strengthen my backend development skills. I'm eager to join a dynamic team where I can contribute, learn, and grow as a developer.
           </p>
         </div>
       </div>
