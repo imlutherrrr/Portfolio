@@ -1,40 +1,46 @@
 import React from "react";
 import "./projects.css";
-import desktopImg from "../images/myportfolio.png"; // Desktop image path
-import mobileImg from "../images/myportfolioM.png"; // Mobile image path
 
 const Projects = () => {
+  const projectList = [
+    {
+      title: "Full-Stack To-Do List Application",
+      description:
+        "Developed the backend for a full-stack To-Do List application, enabling users to add, edit, and delete tasks seamlessly. Built the server with Node.js and Express, integrated a MySQL database for reliable data persistence, and implemented RESTful APIs for smooth communication with the frontend. The frontend template was sourced externally and integrated for a clean, responsive user interface.",
+      tech: "Node.js, Express.js, MySQL (Backend), HTML, CSS, JavaScript (Integrated Frontend Template)",
+      github: "https://github.com/imlutherrrr/To-do",
+    },
+    // You can easily add more projects here
+  ];
+
   return (
     <section id="projects" className="projects-section">
       <h2 className="section-title">Projects</h2>
       <div className="project-container">
-        <div className="project-card responsive-showcase">
-          <div className="device-mockups">
-            {/* Desktop View */}
-            <div className="device">
-              <img src={desktopImg} alt="Portfolio Desktop View" className="project-img1" />
-              <p className="view-label">Desktop View</p>
-            </div>
-
-            {/* Mobile View */}
-            <div className="device">
-              <img src={mobileImg} alt="Portfolio Mobile View" className="project-img" />
-              <p className="view-label">Mobile View</p>
-            </div>
-          </div>
-
-          <div className="project-details">
-            <h3>Responsive Personal Portfolio Website</h3>
-            <p>Designed and developed a fully responsive personal portfolio website using React.js to showcase my professional profile, skills, and projects. The site is optimized for both desktop and mobile views, providing a seamless user experience across all devices. The layout is minimalistic and professional, with a clean interface and smooth transitions.
-
-It includes sections like About, Projects, and Contact, with clickable links to GitHub, LinkedIn, and live project demos. Built with a mobile-first approach using custom CSS and media queries for device adaptability.</p>
-            <p><strong>Tech Stack:</strong> React.js, CSS, JSX</p>
-            <div className="project-links">
-              <a href="https://imlutherrrr.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
-              <a href="https://github.com/imlutherrrr/Portfolio" target="_blank" rel="noreferrer">GitHub</a>
+        {projectList.map((project, index) => (
+          <div
+            className="project-card"
+            key={index}
+            style={{ animationDelay: `${index * 0.2}s` }}
+          >
+            <div className="project-details">
+              <h1>{project.title}</h1>
+              <p>{project.description}</p>
+              <p>
+                <strong>Tech Stack:</strong> {project.tech}
+              </p>
+              <div className="project-links">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

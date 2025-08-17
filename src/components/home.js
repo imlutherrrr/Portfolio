@@ -23,7 +23,7 @@ const Home = () => {
           <div className={`typing-container ${animationDone ? 'done' : ''}`}>
             <span className="typing">Back-End Developer</span>
           </div>
-          <p>I build clean, efficient, and scalable backend systems using Python, Flask, and MySQL.</p>
+          <p>I build clean, efficient, and scalable backend systems using Node.js, Express.js, and MySQL.</p>
         </div>
         <div className="photo-content">
           <img src={myImage} alt="Luther Karuparthi" className="profile-photo" />

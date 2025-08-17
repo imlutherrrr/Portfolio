@@ -33,7 +33,7 @@ const About = () => {
         <div className="about-content" ref={aboutRef}>
           <h2>About Me</h2>
           <p>
-            Hi, I'm Luther Karuparthi, an aspiring Backend Developer with a strong interest in building clean, scalable, and efficient web applications. I specialize in Python, Flask, and MySQL, and I enjoy working behind the scenes to create smooth and responsive user experiences. I recently completed my B.Tech and have been actively building personal projects to strengthen my backend development skills. I'm eager to join a dynamic team where I can contribute, learn, and grow as a developer.
+            I’m Luther Karuparthi, a Backend Developer specializing in Node.js, Express.js, and MySQL. I build clean, scalable APIs and efficient database solutions, with additional skills in HTML, CSS, and JavaScript. Recently graduated with a B.Tech, I focus on creating practical, high-quality projects and am eager to contribute to innovative development teams.
           </p>
         </div>
       </div>

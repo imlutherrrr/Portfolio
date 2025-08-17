@@ -31,6 +31,7 @@
 
 .edu-box:hover {
   transform: translateY(-5px);
+  box-shadow: 0 7px 21px #00e0ff;
 }
 
 .edu-box img {
